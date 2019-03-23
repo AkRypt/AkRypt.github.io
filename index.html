@@ -30,7 +30,7 @@
                 <div class="row-sm-1">
                     <div class="col-sm-12">
                         <br>
-                        <p class="f1" style="font-family:Noto Serif TC">
+                        <p class="f1">
                             <span style="color:#0855d8">( </span>
                             ようこそ。吾輩のブログへ<span style="color:#0855d8"> )</span></p>
                     </div>        
@@ -72,8 +72,8 @@
                             <a href="#">Anime #8</a>
                             <a href="#">Anime #9</a>
                             <a href="#">Anime #10</a>
-                        </div>
                     </div>
+                </div>
 
                 <div class="col-sm-10">
                     <section>
@@ -86,18 +86,20 @@
                             <p class="note">The 
                                 webpage will consist of a picture, review of the anime and a description of the anime.</p>
                             <br>
-                            <br>
+                            <p class="note2">Try pressing the buttons provided below!!</p>
+                            <br><br><br>
+                            
                             
                             <div class="container-fluid" style="margin-left:-40px;margin-bottom: 35px;">
                                 <div class="row">
-                                    <div class="col-sm" id="chb">
-                                        <button class="btn btn-danger" id="chibi" onclick="chibi()">Chibi Kaneki</button>
+                                    <div class="col-sm" id="scry">
+                                        <button class="btn btn-danger" id="chibi" onclick="kaneki()">Scary Kaneki</button>
                                     </div>
                                     <div class="col-sm" style="text-align:center">
                                         <img  id="kaneki" src="https://pngriver.com/wp-content/uploads/2018/04/Download-Ghoul-PNG-Image.png">
                                     </div>
-                                    <div class="col-sm" id="scry">
-                                        <button class="btn btn-danger" id="chibi" onclick="kaneki()">Scary Kaneki</button>
+                                    <div class="col-sm" id="chb">
+                                            <button class="btn btn-danger" id="chibi" onclick="chibi()">Chibi Kaneki</button>
                                     </div>
                                 </div>
                                 
@@ -105,7 +107,7 @@
 
                             <div class="form-group">
                                 <div class="row">
-                                    <textarea class="form-control" id="txta1" rows="3" style="max-width: 40%"
+                                    <textarea class="form-control" id="txta1" rows="3"
                                     placeholder="Share your thoughts about any Anime~"></textarea>
                                     <button type="submit" class="btn btn-primary" id="post" onclick="post()">Post</button>
                                 </div>
