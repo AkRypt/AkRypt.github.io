@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>iPuNk Test Blog</title>
+        <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+
+    <body>
+        <header>
+            <div class="container-fluid" 
+            style="text-align:center;padding-top:px;padding-bottom:0.05px;margin-top:-15px">
+                <div class="row-sm-1">
+                    <div class="col-sm-12">
+                        <br>
+                        <h1 style="font-family:Megrim;font-size:40px;color: red;margin-bottom: -30px">Welcome to iPuNk's 
+                            Test Blog #1</h1>
+                    </div>    
+                </div>
+                <div class="row-sm-1">
+                    <div class="col-sm-12">
+                        <br>
+                        <p class="f1" style="font-family:Noto Serif TC">
+                            <span style="color:#0855d8">( </span>
+                            ようこそ。吾輩のブログへ<span style="color:#0855d8"> )</span></p>
+                    </div>        
+                </div>        
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row" style="text-align:center" id="navtop">
+                    <div class="col-md-4">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#footer">Contact Us</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#footer">About Us</a>
+                    </div>
+            </div>
+            
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="sidenav">
+                            <a href="#">Anime #1</a>
+                            <a href="#">Anime #2</a>
+                            <a href="#">Anime #3</a>
+                            <a href="#">Anime #4</a>
+                            <a href="#">Anime #5</a>
+                            <a href="#">Anime #6</a>
+                            <a href="#">Anime #7</a>
+                            <a href="#">Anime #8</a>
+                            <a href="#">Anime #9</a>
+                            <a href="#">Anime #10</a>
+                        </div>
+                    </div>
+
+                <div class="col-sm-10">
+                    <section>
+                            <h1 id="hometop"><b>This is the HOME page</b></h1>
+                            <p>On clicking any of the anime name given in the sidebar, you'll be redirected to a new webpage which contains
+                                information on that particular anime.
+                            </p>
+                            <p class="note">The 
+                                webpage will consist of a picture, review of the anime and a description of the anime.</p>
+                            <br>
+                            <br>
+                            
+                            <div class="container-fluid" style="margin-left:-40px;margin-bottom: 35px;">
+                                <div class="row">
+                                    <div class="col-sm" style="text-align:right;padding-top: 300px">
+                                        <button class="btn btn-danger" id="chibi" onclick="chibi()">Chibi Kaneki</button>
+                                    </div>
+                                    <div class="col-sm" style="text-align:center">
+                                        <img  id="kaneki" src="https://pngriver.com/wp-content/uploads/2018/04/Download-Ghoul-PNG-Image.png">
+                                    </div>
+                                    <div class="col-sm" style="text-align:left;padding-top: 300px;">
+                                        <button class="btn btn-danger" id="chibi" onclick="kaneki()">Scary Kaneki</button>
+                                    </div>
+                                </div>
+                                
+                            </div>    
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <textarea class="form-control" id="txta1" rows="3" style="max-width: 40%"
+                                    placeholder="Share your thoughts about any Anime~"></textarea>
+                                    <button type="submit" class="btn btn-primary" id="post" onclick="post()">Post</button>
+                                </div>
+                            </div>
+                            <hr color="black">
+                            <p>↓ All the threads posted will appear below this ↓</p>
+                            <hr>
+                            <div class="container-fluid" id="feed">
+                                <!-- All the posts will get appended here -->
+                            </div>
+
+                            <br><br><br><br><br><br><br><br><br>
+                    </section>
+                </div>
+            </div>
+        </div>
+            
+
+
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="https://www.gmail.com" target="blank"><u>Email Us</u></p>
+                    </div>
+                    <div class="col-sm">
+                            <a href="https://www.facebook.com" target="_blank"><u>Facebook</u></a>
+                    </div>
+                    <div class="col-sm">
+                            <a href="https://www.twitter.com" target="_blank"><u>Twitter</u></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

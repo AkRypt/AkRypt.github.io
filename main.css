@@ -1,0 +1,130 @@
+.f1 {
+    font-style: normal;
+    font-size: 30px;
+    color: red;
+    margin-bottom: 10px;
+    outline-offset: 20px;
+}
+header {
+    background-image: url(https://s3.envato.com/files/218429202/Preview_Image_.jpg);
+}
+body {
+    background-color:midnightblue; 
+    background-image: url(http://www.sfwallpaper.com/images/cool-background-7.jpg);
+    /*http://www.sfwallpaper.com/images/cool-background-7.jpg <--Previous*/
+}
+
+#navtop {
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+#navtop a {
+    background-color: #141616;
+    /* width: 100%;
+    height: 50px; */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana;
+    padding: 4% 45%;
+    margin: -20%;
+    color: white;
+}
+#navtop a:hover {
+    background-color:#1b1e1e;
+}
+
+.sidenav {
+    /* margin-top: 25px; */
+    /* position: fixed; */
+    top: 20%;
+    overflow-x: hidden;
+    background-color: #141616;
+    padding: 4% 40% 4% 2%;
+    float: left;
+}
+.sidenav a {
+    text-decoration: none;
+    display: block;
+    margin-left: 12px;
+    padding: 8px 12px 8px 16px;
+    color: #696d6d;
+    font-family: Verdana;
+    font-size: 16px;
+}
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+
+
+p {
+    font-size: 24px;
+    font-family: ZCOOL XiaoWei;
+    color: #ff19eb;
+}
+
+.note {
+    border-left: solid 2px red;
+    background-color: #04183a;
+    padding: 10px 10px;
+    margin-right:220px;
+    color: yellow;
+    font-family: Calibri;
+}
+
+#hometop {
+    text-align:center;
+    font-family: Lobster;
+    font-size: 50px;
+    border: 3px solid red;
+    border-radius: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-shadow:3px 2px #0aff32;
+}
+
+#txta1 {
+    background-color: #221230;
+    color: white;
+    border-color: black;
+    resize: none;
+}
+
+#post {
+    margin-left:1%;
+    min-width:90px;
+    border-color: #0c4ab2;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 40px;   
+    text-align: center;
+    background-color: black;
+    color: #404347;
+}
+footer a{
+    font-family: Lobster;
+    font-size: 30px;
+    color: #404347;
+}
+
+#chibi {
+    font-size: 25px;
+}
+#feed {
+    margin-left: -25px;
+}
+#feed p{
+    word-wrap: break-word;
+    width: 60%;
+    background-color: #0e151e;
+    border: solid 0.2px #566272;
+    color: #a5c4e5;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 10px 25px 8px 15px;
+}
