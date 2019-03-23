@@ -3,7 +3,7 @@
     font-size: 30px;
     color: red;
     margin-bottom: 10px;
-    outline-offset: 20px;
+    /* outline-offset: 20px; */
 }
 header {
     background-image: url(https://s3.envato.com/files/218429202/Preview_Image_.jpg);
@@ -33,6 +33,32 @@ body {
 #navtop a:hover {
     background-color:#1b1e1e;
 }
+#smlnav {
+    display: none;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+#smlnav a{
+    background-color: #141616;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    color: white;
+}
+#smlnav a:hover {
+    background-color:#1b1e1e;
+}
+@media screen and (max-width: 600px) {
+    #navtop {display: none;}
+    #smlnav {
+        display: block;
+        padding: 0;
+    }
+}
 
 .sidenav {
     /* margin-top: 25px; */
@@ -48,15 +74,16 @@ body {
     display: block;
     margin-left: 12px;
     padding: 8px 12px 8px 16px;
-    color: #696d6d;
+    color: #888c8c;
     font-family: Verdana;
     font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
 }
 .sidenav a:hover {
     text-decoration: underline;
 }
-
-
 
 p {
     font-size: 24px;
@@ -65,12 +92,15 @@ p {
 }
 
 .note {
-    border-left: solid 2px red;
-    background-color: #04183a;
+    border-left: solid 4px red;
+    background-image: url(https://previews.123rf.com/images/panupong1982/panupong19821707/panupong1982170700032/82400671-colorful-sky-and-clouds-pink-and-blue-color-background.jpg);
     padding: 10px 10px;
-    margin-right:220px;
-    color: yellow;
+    width: 800px;
+    padding-right: 20px;
+    border-top-right-radius: 10px;
+    color: blue;
     font-family: Calibri;
+    font-size: 20px;
 }
 
 #hometop {
@@ -79,13 +109,32 @@ p {
     font-size: 50px;
     border: 3px solid red;
     border-radius: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 300px;
-    margin-right: 300px;
-    text-shadow:3px 2px #0aff32;
+    padding: 10px 20px;
+    display: inline-block;
+    text-shadow:3px 2px red;
+}
+#chb {
+    text-align:right;
+    padding-top: 300px;
+}
+#scry {
+    text-align:left;
+    padding-top: 300px;
 }
 
+@media screen and (max-width: 600px) {
+    .note {
+        width: 400px;
+    }
+    #chb {
+        text-align:center;
+        padding: 20px;
+    }
+    #scry {
+        text-align:center;
+        padding: 20px;
+    }
+}
 #txta1 {
     background-color: #221230;
     color: white;
@@ -101,7 +150,7 @@ p {
 
 footer {
     padding-top: 10px;
-    padding-bottom: 40px;   
+    padding-bottom: 8px;  
     text-align: center;
     background-color: black;
     color: #404347;
@@ -127,4 +176,10 @@ footer a{
     font-size: 18px;
     border-radius: 4px;
     padding: 10px 25px 8px 15px;
+}
+
+#made {
+    color: #404347;
+    text-align: left;
+    font-size: 15px;
 }
