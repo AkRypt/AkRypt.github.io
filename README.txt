@@ -1,1 +1,0 @@
-This is Akshit's own version of the website.

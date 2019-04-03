@@ -1,0 +1,49 @@
+body {
+    background: url(back.jpg);
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Yatra One;
+    color: white;
+    text-shadow: red 2px 2px;
+    margin-top: 10%;
+    font-size: 50px;
+}
+h2 {
+    font-family: Yatra One;
+    color: white;
+    text-shadow: red 2px 2px;
+}
+
+.main {
+    margin-top: 6%;
+    background: rgba(2, 26, 48, 0.5);
+    outline: 1px solid white;
+    -moz-outline-radius-bottomleft: 10px;
+    -moz-outline-radius-bottomright: 10px;
+    -moz-outline-radius-topleft: 10px;
+    -moz-outline-radius-topright: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    font-family: Yatra One;
+    color: white;
+    text-shadow: red 1px 1px;
+    font-size: 20px;
+}
+
+#btn {
+    font-family: Yatra One;
+    color: red;
+    text-shadow: #10b0d1 2px 2px;
+    background-color: white;
+    text-transform: capitalize;
+    font-size: 35px;
+}

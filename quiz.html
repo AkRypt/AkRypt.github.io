@@ -5,20 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>iPuNk's Quiz Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro:300|Arima+Madurai:200|Syncopate" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="quiz.css">
 </head>
 <body>
 
-    <h1>Welcome to iPuNk's Quiz Site</h1>
-    <div class="container" style="text-align:center;margin-top:24%">
-        <a href="quiz.html"><button class="btn" id="btn1">Continue</button></a>
+    <h1>Let's start the Quiz!!</h1>
+    <div class="container main" id="rules">
+        <h2>> Instructions:</h2>
+        <ul>
+            <li>> You'll be asked a question with two choices and you have to choose the correct choice.</li>
+            <li>> On choosing a correct choice, you'll get one point and one choosing a wrong choice, you'll get no points.</li>
+            <li>> Your total score will be shown to you after you answer all the questions.</li>
+            <li>> There will be no submit button so once you choose a choice, you'll be instantly redirected to the next question.</li>
+            <li>> I hope you enjoy the quiz, thank you! <i class="far fa-smile-wink"></i></li>
+        </ul>
     </div>
+    <div class="container" style="text-align:center;margin-top: 2%;">
+        <button class="btn" id="btn">Continue</button>
+    </div>
+
+    <div class="container main" id="q1" style="display: none;">
+        <h2>This is question</h2>
+    </div>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -28,5 +48,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/js/mdb.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
