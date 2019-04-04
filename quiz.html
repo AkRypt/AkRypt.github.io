@@ -6,7 +6,7 @@
     <title>iPuNk's Quiz Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Righteous" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro:300|Arima+Madurai:200|Syncopate" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <h1>Let's start the Quiz!!</h1>
+    <h1 id="que">Let's start the Quiz!!</h1>
     <div class="container main" id="rules">
         <h2>> Instructions:</h2>
         <ul>
@@ -33,12 +33,73 @@
     </div>
 
     <div class="container main" id="q1" style="display: none;">
-        <h2>This is question</h2>
+        <h3>What can be broken, but is never held?</h3>
+        <div class="row" style="margin-top:5%;margin-bottom: 2%">
+            <div class="col-md">
+                <button class="btn ans" id="b1"><div class="insider"></div>Bones</button>
+            </div>
+            <div class="col-md">
+                <button class="btn ans" id="a1">Promise</button>
+            </div>
+        </div>
     </div>
 
+    <div class="container main" id="q2" style="display: none;">
+        <h3>What is it that lives if it is fed, and dies if you give it a drink?</h3>
+        <div class="row" style="margin-top:5%;margin-bottom: 2%">
+            <div class="col-md">
+                <button class="btn ans" id="a2"><div class="insider"></div>Fire</button>
+            </div>
+            <div class="col-md">
+                <button class="btn ans" id="b2">Ant</button>
+            </div>
+        </div>
+    </div>
 
+    <div class="container main" id="q3" style="display: none;">
+        <h3>If it takes eight men ten hours to build a wall, how long would it take four men?</h3>
+        <div class="row" style="margin-top:5%;margin-bottom: 2%">
+            <div class="col-md">
+                <button class="btn ans" id="b3"><div class="insider"></div>20 Hours</button>
+            </div>
+            <div class="col-md">
+                <button class="btn ans" id="a3">0 Hours</button>
+            </div>
+        </div>
+    </div>
 
+    <div class="container main" id="q4" style="display: none;">
+        <h3>If you have a bowl with six apples and you take away four, how many do you have?</h3>
+        <div class="row" style="margin-top:5%;margin-bottom: 2%">
+            <div class="col-md">
+                <button class="btn ans" id="a4"><div class="insider"></div>Four</button>
+            </div>
+            <div class="col-md">
+                <button class="btn ans" id="b4">Six</button>
+            </div>
+        </div>
+    </div>
 
+    <div class="container main" id="q5" style="display: none;">
+        <h4>Uncle Bill’s farm had a terrible storm and all but seven sheep out of 20 sheep were killed. How many sheep are still alive?</h4>
+        <div class="row" style="margin-top:5%;margin-bottom: 2%">
+            <div class="col-md">
+                <button class="btn ans" id="a5"><div class="insider"></div>Seven</button>
+            </div>
+            <div class="col-md">
+                <button class="btn ans" id="b5">Thirteen</button>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="animated zoomInDown" id="c" style="display: none;margin-top: 5%">Congratulations!!!</h1>
+    <h2 class="animated slideInLeft" id="wd" style="display: none;"></h2>
+    <div class="container animated rollIn delay-1s" id="result" style="display:none">
+        <p class="fnt" id="res" style="text-align:left;margin-left: 10%"></p>
+        <hr>
+        <p class="fnt" style="text-align:right;margin-right: 10%;">5</p>
+    </div>
+    <br>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
