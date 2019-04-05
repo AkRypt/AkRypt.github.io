@@ -3,6 +3,7 @@ $(document).ready(function(){
     $("#btn").click(function(){
         $("#rules").css({display:"none"});
         $("#btn").css({display:"none"});
+        $("#tp").css({display:"block"});
         $("#que").text("Question #1:").addClass("animated slideInDown");
         $("#q1").css({display:"block"}).addClass("animated slideInUp");
     });
@@ -53,6 +54,7 @@ $(document).ready(function(){
     $("#a5").click(function(){
         total+=1;
         $("#que").css({display:"none"});
+        $("#tp").css({display:"none"});
         $("#q5").css({display:"none"});
         $("#result").css({display:"block"});
         $("#result").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -66,6 +68,7 @@ $(document).ready(function(){
     });
     $("#b5").click(function(){
         $("#que").css({display:"none"});
+        $("#tp").css({display:"none"});
         $("#q5").css({display:"none"});
         $("#result").css({display:"block"});
         $("#result").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){

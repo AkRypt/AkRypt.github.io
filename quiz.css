@@ -120,3 +120,25 @@ hr {
     border-color: red;
     border-width:4px;  
 }
+
+@media screen and (max-width:600px) {
+    body {
+        overflow: none;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    li {
+        font-size: 16px;
+    }
+    #tp {
+        margin-bottom: 25vh;
+    }
+    #c {
+        padding-top: 20vh;
+        font-size: 32px;
+    }
+    #wd {
+        font-size: 25px;
+    }
+}
