@@ -1,34 +1,116 @@
-body {
-    background: url(https://i.imgur.com/HvsfNlo.jpg);
-    background-attachment: fixed;
-    background-size: 100%;
+/* Underline effect */
+.slide-center-out 
+{
+    text-decoration:none;
+    display: inline-block;
+    color:black;
+}
+.slide-center-out:after 
+{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    -webkit-transition: width .5s ease, background-color .5s ease;
+    -moz-transition: width .5s ease, background-color .5s ease;
+    margin:auto; /* center the cotent so it will sliding from the midddle to the left and right */
+}
+.slide-center-out:hover:after 
+{
+    text-decoration: none;
+    width: 100%;
+    background: blue;
+}
+.nav {
+    font-family: Lobster;
+    font-size: 25px;
+    text-decoration: none;
+}
+.nav:hover {
+    color: black;
+    text-decoration: none;
+}
+#gh {
+    font-size: 40px;
+    color: black;
+    margin-right: 2%
+}
+#gh:hover {
+    color: white;
+}
+#li {
+    font-size: 40px;
+    color: white
+}
+#li:hover {
+    color:black;
+}
+#mypic {
+    border-radius: 6px;
+    margin-left: 44%;
+}
+#mypic2 {
+    border-radius: 8px;
+    block-size: 100%;
+    margin-top: 10%;
+    z-index: 2;
+    position: absolute;
+}
+.transbtn {
+    border: solid 1px #2473f2;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Verdana;
 }
 
-h1 {
-    text-align: center;
-    color: white;
+#ul1 {
+    font-size: 25px;
+    font-family: Arima Madurai;
+    list-style: none;
+    text-align: left;
+    margin-left: 69%;
+}
+.details {
+    color: #2473f2;
+    background: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+#ul2 {
+    list-style-type: none;
+}
+.edtit {
+    color: #2473f2;
     font-family: Yatra One;
-    margin-top: 6%;
-    font-size: 50px;
-    text-shadow: red 2px 2px;
+    font-size: 25px;
 }
-
-#btn1 {
-    background-color: black;
+.yos {
+    color: gray;
+    font-size: 15px;
+    font-family: Verdana;
+}
+.field {
+    font-size: 20px;
+    font-family: Arima Madurai;
+    color: black;
+}
+.skillbg {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 5%;
+    transform: skew(320deg);
+    background: white;
+    border: 1px solid #2473f2;
+    border-right: none;
+}
+#uai {
+    font-family: Lobster;
+    color: black;
+    font-size: 30px;
+}
+#uai:hover {
     color: white;
-    text-shadow: red 2px 2px;
-    font-size: 28px;
-}
-
-@media screen and (max-width:600px) {
-    body {
-        background: url(https://wallpaperplay.com/walls/full/b/a/a/185995.jpg);
-        background-size: 100%;
-    }
-    h1 {
-        margin-top: 8%;
-    }
-    #btn1 {
-        margin-top: 60%;
-    }
 }
