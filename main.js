@@ -1,11 +1,12 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         $("#navbar").toggleClass("scrolled", $(this).scrollTop() > 60);
+        $("#mobtop").toggleClass("scrolled", $(this).scrollTop() > 60);
         $(".slideanim").each(function(){
             var pos = $(this).offset().top;
 
             var winTop=$(window).scrollTop();
-            if (pos<winTop+600) {
+            if (pos<winTop+700) {
                 $(this).addClass("slide");
             }
         });
@@ -19,7 +20,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     // Add smooth scrolling to all links in navbar + footer link
-    $("#navbar a,#navbar h1").on('click', function(event) {
+    $("#navbar a,#navbar h1, #mobtop a").on('click', function(event) {
   
      // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -41,4 +42,10 @@ $(document).ready(function(){
         });
       } // End if
     });
+});
+// Mobile Optimised
+$(document).ready(function(){
+    $("#navmenubtn").click(function(){
+        $("#navmenu").slideToggle(500);
+    }); 
 });

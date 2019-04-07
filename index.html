@@ -26,13 +26,15 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="navbar" style="z-index:8;top:5px;position: fixed">
+    <div class="container-fluid " id="navbar" style="z-index:8;top:5px;position: fixed">
         <nav style="text-align: right">
             <div class="row">
-                <div class="col-md-3">
-                    <h1 style="font-family: Lobster;text-align: left;"><a href="#topbase" id="akh" 
-                        style="text-decoration: none;color:#2473f2;font-size: 28px">AkRypt</a></h1>
+                <div class="col-md-1 col-sm-1">
+                    <h1 style="font-family: Lobster;text-align: left;">
+                        <a href="#topbase" id="akh">AkRypt</a>
+                    </h1>
                 </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-2">
                     <a class="slide-center-out nav" href="#intro" style="margin-top: 15px">Intro</a>
                 </div>
@@ -48,19 +50,46 @@
             </div>
         </nav>
     </div>
+
+    <!-- For Mobile -->
+    <div class="container-fluid" id="mobtop" style="z-index:8;position: fixed">
+        <div class="row" style="z-index:8;">
+            <div class="col-sm">
+                <p><a href="#topbase" id="akrypt">Akrypt</a>
+                    <a id="navmenubtn" style="margin-left: 65%"><i class="fas fa-chevron-circle-down"></i></a></p>
+                <!-- <h1 style="">
+                    <a href="#topbase" id="akrypt">AkRypt</a>
+                </h1> -->
+            </div>
+        </div>
+        <!-- <div class="row" style="z-index:9;">
+            <div class="col-sm">
+                <h1 style="font-family: Lobster;text-align: right;margin-top: -55px;"><a id="navmenubtn">
+                    <i class="fas fa-chevron-circle-down"></i></a>
+                </h1>
+            </div>
+        </div> -->
+        <div class="row" id="navmenu" style="text-align:center;border-bottom: 1px solid #00b8c1">
+            <div class="col-sm bordbtm" style="text-align:center;margin-left: 50px;"><a href="#intro">Intro</a></div>
+            <div class="col-sm bordbtm" style="text-align:center;margin-left: 50px;"><a href="#resume">Résumé</a></div>
+            <div class="col-sm bordbtm" style="text-align:center;margin-left: 50px;"><a href="#projects">Projects</a></div>
+            <div class="col-sm bordbtm" style="text-align:center;margin-left: 50px;"><a href="#contact">Contact</a></div>            
+        </div>
+    </div>
+
     
     <div class="container" style="z-index: 4; top: 120px; position: absolute;">
         <img src="https://i.imgur.com/fDLKw85.jpg" id="mypic" width="55%" height="55%">
     </div>
     <div class="container animated slideInLeft delay-1s" style="z-index: 5;margin-left: 12%;top: 180px;position: absolute">
         <p style="color:black;font-size: 30px">Hello</p>
-        <h1 style="color:black;font-family: Fugaz One;font-size: 80px"><span style="color:#2473f2;">I'm</span> Akshit</h1>
+        <h1 style="color:black;font-family: Fugaz One;font-size: 80px"><span id="iam">I'm</span> Akshit</h1>
         <h1 style="color: black;font-family: Fugaz One; font-size: 80px">Dayal</h1>
         <p style="font-size: 20px;">Student at HITAM</p>
         <a class="transbtn" href="#contact">Contact Me</a>
     </div>
 
-    <div class="container-fluid animated slideInLeft delay-1s" style="z-index: 3;top: 140px;position: absolute">
+    <div class="container-fluid animated slideInLeft delay-1s" id="alldetails">
         <ul id="ul1">
             <li><span class="details">Age: </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19</li><br>
             <li><span class="details">Phone: </span>&nbsp;&nbsp;&nbsp; +91 9704277687</li><br>
@@ -76,7 +105,7 @@
             </li>
         </ul>
     </div>
-    <div style="margin-top: 20px;" id="intro"></div>
+    <div id="intro"></div>
     <div class="container-fluid slideanim" style="background: #2473f2;margin-top: 280px;">
         <div class="container">
             <br>
@@ -186,12 +215,10 @@
     <br><br><br><br><br>
     <div class="" id="projects"></div>
     <br><br><br><br><br><br><br><br>
-    <div class="container-fluid slideanim"  style="background: #2473f2;padding: 20px;z-index: 1">
+    <div class="container-fluid slideanim" id="myproj" style="background: #2473f2;padding: 20px;z-index: 1">
         <div class="container">
-            <img class="slideanim" src="https://imgur.com/nmgrnac.jpg" width="500px" height="250px" 
-            style="position: absolute;margin-left: -10%;margin-top: -170px;border-radius: 10px">
-            <img class="slideanim" src="https://imgur.com/4tPhbxW.jpg" width="500px" height="250px" 
-            style="position: absolute;margin-left: 50%;margin-top: 160px;border-radius: 10px">
+            <img class="slideanim" id="signing" src="https://imgur.com/nmgrnac.jpg">
+            <img class="slideanim" id="quiz" src="https://imgur.com/4tPhbxW.jpg">
             <h1 style="text-align: center;color: white;font-family: Arima Madurai;">My Projects</h1>
             <h5 style="text-align: center;font-family: Arima Madurai;margin-top: -1s0px">(So far)</h5>
             <br><br>
@@ -207,30 +234,29 @@
     </div>
     <br><br><br><br><br><br><br><br><br><br>
 
-    <img src="https://imgur.com/UAdEI6r.jpg" style="z-index:5;margin-left: 60%;margin-top: 140px;position:absolute;block-size: 50%;
-    border-radius: 20px" alt="My Picture" >
-    <div class="container-fluid slideanim" id="contact" style="background: black;padding: 30px">
+    <img src="https://imgur.com/UAdEI6r.jpg" alt="My Picture" id="mypic3">
+    <div class="container-fluid" id="contact" style="background: black;padding: 30px">
         <div class="container">
             <h1 style="color: white;font-family: Arima Madurai;">Contact Me</h1><br>
             <p>
-                <i class="fas fa-mobile slideanim" style="font-size: 30px;color: white;margin-right: 30px;margin-left: 8px"></i>
-                <span style="font-size: 30px;color:#2473f2">+91 9704277687</span>
+                <i class="fas fa-mobile" style="font-size: 30px;color: white;margin-right: 30px;margin-left: 8px"></i>
+                <span id="cntdet">+91 9704277687</span>
             </p><br>
             <p>
-                <i class="fas fa-envelope slideanim" style="font-size: 30px;color: white;margin-right: 30px"></i>
-                <span style="font-size: 35px;color:#2473f2">akshitdayal99@gmail.com</span>
+                <i class="fas fa-envelope" style="font-size: 30px;color: white;margin-right: 30px"></i>
+                <span id="cntdetem">akshitdayal99@gmail.com</span>
             </p><br>
             <p>
-                <i class="fas fa-globe slideanim" style="font-size: 30px;color: white;margin-right: 30px"></i>
-                <a href="https://akrypt.github.io/" style="font-size: 30px;color:#2473f2;" target="_blank" id="uai"><u>AkRypt.github.io</u></a>
+                <i class="fas fa-globe" style="font-size: 30px;color: white;margin-right: 30px"></i>
+                <a href="https://akrypt.github.io/" id="cntdet" target="_blank" id="uai"><u>AkRypt.github.io</u></a>
             </p><br>
             <p>
-                <i class="fab fa-github-square slideanim" style="font-size: 30px;color: white;margin-right: 30px"></i>
-                <a href="https://github.com/akrypt" style="font-size: 30px;color:#2473f2;" target="_blank" id="uai"><u>GitHub.com/AkRypt</u></a>
+                <i class="fab fa-github-square" style="font-size: 30px;color: white;margin-right: 30px"></i>
+                <a href="https://github.com/akrypt" id="cntdet" target="_blank" id="uai"><u>GitHub.com/AkRypt</u></a>
             </p><br>
             <p>
-                <i class="fab fa-linkedin-in slideanim" style="font-size: 30px;color: white;margin-right: 30px"></i>
-                <a href="https://www.linkedin.com/in/akshit-dayal-073897163/" style="font-size: 30px;color:#2473f2;font-family: Fugaz One" target="_blank" id="uai"><u>My LinkedIn Profile</u></a>
+                <i class="fab fa-linkedin-in" style="font-size: 30px;color: white;margin-right: 30px"></i>
+                <a href="https://www.linkedin.com/in/akshit-dayal-073897163/" id="cntdet" target="_blank" id="uai"><u>My LinkedIn Profile</u></a>
             </p><br><br><br>
             <p>
                 <i class="far fa-copyright" style="color:white;margin-right: 30px"></i>

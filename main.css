@@ -42,7 +42,7 @@
 }
 #li {
     font-size: 40px;
-    color: white
+    color: white;
 }
 #li:hover {
     color:black;
@@ -57,6 +57,14 @@
     margin-top: 10%;
     z-index: 2;
     position: absolute;
+}
+#mypic3 {
+    z-index:5;
+    margin-left: 60%;
+    margin-top: 140px;
+    position:absolute;
+    block-size: 50%;
+    border-radius: 20px;
 }
 .transbtn {
     border: solid 1px #2473f2;
@@ -111,6 +119,13 @@
     color: black;
     font-size: 30px;
 }
+#akh {
+    text-decoration: none;
+    color:#2473f2;
+    font-size: 28px;
+    top: 20px;
+    display: block;
+}
 #uai:hover {
     color: white;
 }
@@ -122,6 +137,12 @@
     transition: 0.5s ease;
     background: black;
     border-bottom: 2px solid #00b8c1;
+}
+.scrolled #akh {
+    margin-top: 10px;
+}
+.scrolled #akrypt {
+    margin-top: 10vw;
 }
 .scrolled a{
     color:white;
@@ -161,4 +182,130 @@
     opacity: 1;
     -webkit-transform: translateY(0%);
   }
+}
+#mobtop {
+    display: none;
+}
+#navmenubtn {
+    font-size: 25px;
+}
+#navmenu {
+    padding-right: 30%;
+    background: black;
+    text-align: center;
+    top: 40px;
+    display: none;
+}
+#navmenu a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Lobster;
+    font-size: 25px;
+}
+.bordbtm {
+    border-bottom: 1px solid #00b8c1;
+}
+#alldetails {
+    z-index: 3;
+    top: 140px;
+    position: absolute;
+}
+#intro {
+    margin-top: 20px;
+}
+#iam {
+    color: #2473f2;
+}
+#signing {
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    margin-left: -10%;
+    margin-top: -170px;
+    border-radius: 10px;
+}
+#quiz {
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 160px;
+    border-radius: 10px;
+}
+#cntdet, #cntdetem {
+    font-size: 30px;
+    color:#2473f2;
+}
+#akrypt {
+    text-decoration: none;
+    color:#2473f2;
+    font-size: 28px;
+    top: 20px;
+    font-family: Lobster;
+    text-align: left;
+    left: 0px;
+}
+
+@media screen and (max-width:600px) {
+    #navbar {
+        display: none;
+    }
+    #mobtop {
+        top: 5px;
+        display: block;
+    }
+    .scrolled i{
+        color: white;
+    }
+    #navmenu a:hover{
+        color: #2473f2;
+    }
+    #alldetails {
+        z-index: 0;
+        top: 180vw;
+    }
+    #ul1 {
+        font-size: 20px;
+        margin-left: 0%;
+    }
+    #li {
+        color: #2473f2;
+    }
+    #iam {
+        color: white;
+    }
+    #intro {
+        margin-top: 140vw;
+    }
+    .edtit {
+        font-size: 22px;
+    }
+    #signing {
+        width: 250px;
+        height: 125px;
+        margin-left: 7%;
+        margin-top: -200px;
+    }
+    #quiz {
+        width: 250px;
+        height: 125px;
+        margin-left: 7%;
+        margin-top: 400px;
+    }
+    #uai {
+        font-size: 25px;
+    }
+    #myproj {
+        margin-top: -100px;
+    }
+    #cntdet {
+        font-size: 20px;
+    }
+    #mypic3 {
+        display: none;
+    }
+    #cntdetem {
+        font-size: 17px;
+    }
 }
