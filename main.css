@@ -249,7 +249,7 @@
 /* Mobile Optimisation */
 @media screen and (max-width:600px) {
     body {
-        overflow-x: none;
+        overflow-x: hidden;
     }
     #navbar {
         display: none;
@@ -304,6 +304,9 @@
     }
     #cntdet {
         font-size: 20px;
+    }
+    #mypic2 {
+        display: none;
     }
     #mypic3 {
         display: none;
