@@ -49,7 +49,7 @@
 }
 #mypic {
     border-radius: 6px;
-    margin-left: 38%;
+    margin-left: 35%;
 }
 #mypic2 {
     border-radius: 8px;
@@ -246,8 +246,11 @@
     text-align: left;
     left: 0px;
 }
-
+/* Mobile Optimisation */
 @media screen and (max-width:600px) {
+    body {
+        overflow-x: none;
+    }
     #navbar {
         display: none;
     }
