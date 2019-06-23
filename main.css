@@ -127,7 +127,7 @@
     display: block;
 }
 #uai:hover {
-    color: white;
+    color: #2473f2;
 }
 /*Animations*/
 .scrolled {
@@ -188,6 +188,8 @@
 }
 #navmenubtn {
     font-size: 25px;
+    float: right;
+    position: absolute;
 }
 #navmenu {
     padding-right: 30%;
@@ -217,22 +219,20 @@
 #iam {
     color: #2473f2;
 }
-#signing {
+#website_image {
     height: 250px;
     width: 500px;
-    position: absolute;
-    margin-left: -10%;
-    margin-top: -170px;
+    /* position: absolute; */
+    /* margin-left: -10%; */
+    /* margin-top: -170px; */
     border-radius: 10px;
 }
-#quiz {
-    height: 250px;
-    width: 500px;
-    position: absolute;
-    margin-left: 50%;
-    margin-top: 160px;
+#app_image {
+    height: 500px;
+    width: 250px;
     border-radius: 10px;
 }
+
 #cntdet, #cntdetem {
     font-size: 30px;
     color:#2473f2;
@@ -313,5 +313,8 @@
     }
     #cntdetem {
         font-size: 17px;
+    }
+    #website_image {
+        display: none;
     }
 }
