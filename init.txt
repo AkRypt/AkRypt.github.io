@@ -1,3 +1,5 @@
 # To watch Tailwind:
-
 npx tailwindcss -i ./input.css -o ./output.css --watch
+
+# To change theme colours:
+Go to tailwind.config.js

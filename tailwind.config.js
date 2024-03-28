@@ -13,8 +13,9 @@ module.exports = {
         },
         animation: {
           tilt: 'tilt 3s infinite linear',
-          typewriter: 'typewriter 2s steps(11) forwards',
-          caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
+          blink: 'blink 1s infinite',
+          marquee: 'marquee 15s linear infinite',
+          marquee2: 'marquee2 15s linear infinite',
         },
         keyframes: {
           tilt: {
@@ -22,27 +23,17 @@ module.exports = {
             '25%': { transform: 'rotate(1.5deg)' },
             '75%': { transform: 'rotate(-1.5deg)' }
           },
-          typewriter: {
-            to: {
-              left: "100%"
-            }
-          },
           blink: {
-            '0%': {
-              opacity: '0',
-            },
-            '0.1%': {
-              opacity: '1',
-            },
-            '50%': {
-              opacity: '1',
-            },
-            '50.1%': {
-              opacity: '0',
-            },
-            '100%': {
-              opacity: '0',
-            },
+            '0%, 100%': { color: 'transparent' },
+            '50%': { color: 'white' },
+          },
+          marquee: {
+            '0%': { transform: 'translateX(0%)' },
+            '100%': { transform: 'translateX(-100%)' },
+          },
+          marquee2: {
+            '0%': { transform: 'translateX(100%)' },
+            '100%': { transform: 'translateX(0%)' },
           },
         },
       },

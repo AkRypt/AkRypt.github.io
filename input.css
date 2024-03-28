@@ -6,4 +6,8 @@
     html {
         @apply font-mono text-white;
     }
+    .name-shadow {
+        text-shadow: 4px -1px 1px #9300FF;
+        /* #A909FF; */
+    }
 }
