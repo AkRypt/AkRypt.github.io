@@ -42,11 +42,11 @@
         <!-- Gradient borders -->
         <div class="w-full absolute px-[2px] bg-gradient-to-b from-grad-start to-grad-end min-h-screen inset-0 blur animate-tilt"></div>
         <!-- Main Body -->
-        <div class="p-10 pt-[24%] md:pt-[8%] bg-backg min-h-screen relative">
+        <div class="pt-[24%] md:pt-[8%] bg-backg min-h-screen relative">
             
             <!-- Header -->
-            <div class="flex flex-col md:flex-row justify-between">
-                <div class="flex flex-col mr-10">
+            <div class="flex flex-col px-10 md:px-20 pt-10 md:flex-row justify-between">
+                <div class="flex flex-col md:mr-10 md:w-[40%]">
                     <!-- Name -->
                     <h2 class="text-2xl">Hi, I'm</h2>
                     <h1 class="text-xl md:text-6xl font-bold tracking-[0.5rem] animate-blink name-shadow">Akshit Dayal</h1>
@@ -71,35 +71,47 @@
                 </div>
 
                 <!-- Contact Info -->
-                <div class="mr-[8%] h-[30%]">
-                    <div class="h-[30%] grid grid-cols-2 gap-6">
-                        <a href="https://www.github.com/akrypt" target="_blank"
-                        class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" stroke="white" fill="white" height="28" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            <p class="mt-1">GitHub</p>
-                        </a>
-                        <a href="https://www.linkedin.com/in/akshit-u" target="_blank"
-                        class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="white" fill="white" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            <p class="mt-1">LinkedIn</p>
-                        </a>
-                        <a href="https://www.kaggle.com/akrypt8" target="_blank"
-                        class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="white" fill="white" viewBox="0 0 32 32"><path d="M 10.351562 4 C 10.117563 4 10 4.1165625 10 4.3515625 L 10 27.644531 C 10 27.878531 10.116563 27.996094 10.351562 27.996094 L 12.648438 27.996094 C 12.882437 27.996094 13.001953 27.879531 13.001953 27.644531 L 13.001953 22.808594 L 14.810547 21.085938 L 20.048828 27.75 C 20.190828 27.915 20.354922 28 20.544922 28 L 23.716797 28 C 23.882797 28 23.977 27.952422 24 27.857422 L 23.933594 27.498047 L 17.023438 18.910156 L 23.650391 12.498047 C 23.773391 12.370047 23.730438 12 23.398438 12 L 20.117188 12 C 19.951187 12 19.785141 12.085953 19.619141 12.251953 L 13 18.974609 L 13 4.3515625 C 13 4.1165625 12.883437 4 12.648438 4 L 10.351562 4 z"></path></svg>
-                            <p class="mt-1">Kaggle</p>
-                        </a>
-                        <a href="https://medium.com/@akshitdayal99" target="_blank"
-                        class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="white" fill="white" viewBox="0 0 50 50"><path d="M15 12A13 13 0 1015 38 13 13 0 1015 12zM35.5 13c-3.59 0-6.5 5.373-6.5 12 0 1.243.102 2.441.292 3.568.253 1.503.662 2.879 1.192 4.065.265.593.56 1.138.881 1.627.642.978 1.388 1.733 2.202 2.201C34.178 36.811 34.827 37 35.5 37s1.322-.189 1.933-.539c.814-.468 1.56-1.223 2.202-2.201.321-.489.616-1.034.881-1.627.53-1.185.939-2.562 1.192-4.065C41.898 27.441 42 26.243 42 25 42 18.373 39.09 13 35.5 13zM45.5 14c-.259 0-.509.173-.743.495-.157.214-.307.494-.448.833-.071.169-.14.353-.206.551-.133.395-.257.846-.37 1.343-.226.995-.409 2.181-.536 3.497-.063.658-.112 1.349-.146 2.065C43.017 23.499 43 24.241 43 25s.017 1.501.051 2.217c.033.716.082 1.407.146 2.065.127 1.316.31 2.501.536 3.497.113.498.237.948.37 1.343.066.198.135.382.206.551.142.339.292.619.448.833C44.991 35.827 45.241 36 45.5 36c1.381 0 2.5-4.925 2.5-11S46.881 14 45.5 14z"></path></svg>
-                            <p class="mt-1">Medium</p>
-                        </a>
+                <div class="flex md:mr-[8%] px-4 py-2 md:p-2 md:h-[25vw] md:w-[25vw] justify-center items-center relative ">
+
+                    <!-- Spinning circle background -->
+                    <div class="animate-rectangle w-full h-full absolute bg-gradient-to-r from-grad-start via-purple-500 to-indigo-800 rounded-full blur-sm">
+                        <div class="bg-backg w-[98%] h-[98%] rounded-full "></div>
                     </div>
-                    <p class="text-lg mt-4 text-center">akshitdayal99@gmail.com</p>
+
+                    <div class="relative md:m-8">
+                        <div class="grid grid-cols-2 gap-6">
+                            <a href="https://www.github.com/akrypt" target="_blank"
+                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" stroke="white" fill="white" height="28" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                <p class="mt-1">GitHub</p>
+                            </a>
+                            <a href="https://www.linkedin.com/in/akshit-u" target="_blank"
+                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="white" fill="white" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                <p class="mt-1">LinkedIn</p>
+                            </a>
+                            <a href="https://www.kaggle.com/akrypt8" target="_blank"
+                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="white" fill="white" viewBox="0 0 32 32"><path d="M 10.351562 4 C 10.117563 4 10 4.1165625 10 4.3515625 L 10 27.644531 C 10 27.878531 10.116563 27.996094 10.351562 27.996094 L 12.648438 27.996094 C 12.882437 27.996094 13.001953 27.879531 13.001953 27.644531 L 13.001953 22.808594 L 14.810547 21.085938 L 20.048828 27.75 C 20.190828 27.915 20.354922 28 20.544922 28 L 23.716797 28 C 23.882797 28 23.977 27.952422 24 27.857422 L 23.933594 27.498047 L 17.023438 18.910156 L 23.650391 12.498047 C 23.773391 12.370047 23.730438 12 23.398438 12 L 20.117188 12 C 19.951187 12 19.785141 12.085953 19.619141 12.251953 L 13 18.974609 L 13 4.3515625 C 13 4.1165625 12.883437 4 12.648438 4 L 10.351562 4 z"></path></svg>
+                                <p class="mt-1">Kaggle</p>
+                            </a>
+                            <a href="https://medium.com/@akshitdayal99" target="_blank"
+                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="white" fill="white" viewBox="0 0 50 50"><path d="M15 12A13 13 0 1015 38 13 13 0 1015 12zM35.5 13c-3.59 0-6.5 5.373-6.5 12 0 1.243.102 2.441.292 3.568.253 1.503.662 2.879 1.192 4.065.265.593.56 1.138.881 1.627.642.978 1.388 1.733 2.202 2.201C34.178 36.811 34.827 37 35.5 37s1.322-.189 1.933-.539c.814-.468 1.56-1.223 2.202-2.201.321-.489.616-1.034.881-1.627.53-1.185.939-2.562 1.192-4.065C41.898 27.441 42 26.243 42 25 42 18.373 39.09 13 35.5 13zM45.5 14c-.259 0-.509.173-.743.495-.157.214-.307.494-.448.833-.071.169-.14.353-.206.551-.133.395-.257.846-.37 1.343-.226.995-.409 2.181-.536 3.497-.063.658-.112 1.349-.146 2.065C43.017 23.499 43 24.241 43 25s.017 1.501.051 2.217c.033.716.082 1.407.146 2.065.127 1.316.31 2.501.536 3.497.113.498.237.948.37 1.343.066.198.135.382.206.551.142.339.292.619.448.833C44.991 35.827 45.241 36 45.5 36c1.381 0 2.5-4.925 2.5-11S46.881 14 45.5 14z"></path></svg>
+                                <p class="mt-1">Medium</p>
+                            </a>
+                        </div>
+                        <p class="text-lg mt-4 text-center ">akshitdayal99@gmail.com</p>
+                    </div>
                 </div>
             </div>
 
+            
+
+
+
             <!-- Skills Marquee -->
-            <div class="relative my-[40px]">
+            <div class="relative mt-[200px] mb-[60px]">
                 <div class="rounded-lg mx-[30px] absolute inset-0.5 bg-gradient-to-b from-grad-start to-grad-end blur "></div>
                 <div class="flex relative overflow-x-hidden bg-backg">
                     <div class="py-12 animate-marquee whitespace-nowrap flex">
@@ -185,7 +197,7 @@
             <!-- <div class="w-full h-[1px] bg-borderg my-4 opacity-50"></div> -->
 
             <!-- About me Section -->
-            <div class="mt-[40px]">
+            <div class="px-10 md:px-20 mt-[40px]">
                 <h1 class="text-2xl font-semibold">About Me:</h1>
             </div>
 
