@@ -3,6 +3,9 @@ module.exports = {
     content: ["./**/*.{html,js}"],
     theme: {
       extend: {
+        fontFamily: {
+          spacemono: ['SpaceMono', 'monospace'],
+        },
         colors: {
           transparent: 'transparent',
           current: 'currentColor',

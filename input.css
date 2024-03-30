@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+    @font-face {
+        font-family: 'SpaceMono';
+        src: url(assets/Space_Mono/SpaceMono-Regular.ttf);
+    }
+    
     html {
-        @apply font-mono text-white;
+        @apply font-spacemono text-white;
     }
     .name-shadow {
         text-shadow: 4px -1px 6px #5807F0;
