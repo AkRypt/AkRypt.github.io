@@ -8,34 +8,41 @@
     <link rel="icon" href="./assets/favicon.ico">
     <title>Akshit Dayal | Portfolio</title>
 </head>
-<body class="bg-backg min-h-screen mb-10">
+<body class="bg-backg min-h-screen mb-10 overflow-x-hidden">
     
     <!-- Navbar -->
-    <nav class="md:px-10 fixed top-0 w-full z-50 shadow-md">
-        <div class="bg-backg flex flex-wrap items-center justify-between p-2 md:py-4 md:px-6 min-w-screen border border-black border-b-borderg">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="assets/ak_logo.png" class="h-8" alt="Akshit Logo" />
-            </a>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:name-shadow md:p-0">About</a>
-                    </li>
-                    
-                </ul>
+    <nav class="px-2 md:px-10 fixed top-0 w-full z-50">
+        <div class="relative">
+            <!-- Gradient Bottom Border -->
+            <div class="mx-6 rounded-lg absolute inset-0.5 bg-gradient-to-r from-grad-start via-purple-500 to-grad-end blur"></div>
+            <!-- Navbar Contents -->
+            <div class="flex flex-wrap items-center justify-between p-2 md:py-4 md:px-8 min-w-screen bg-backg relative">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/ak_logo.png" class="h-8" alt="Akshit Logo" />
+                    <p class="text-lg font-bold name-shadow">Akshit</p>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:name-shadow md:p-0">About</a>
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
   
+
 
     <!-- Main bg -->
     <div class="relative mx-2 md:mx-10">
@@ -46,6 +53,7 @@
             
             <!-- Header -->
             <div class="flex flex-col px-10 md:px-20 pt-10 md:flex-row justify-between">
+                <!-- Intro -->
                 <div class="flex flex-col md:mr-10 md:w-[40%]">
                     <!-- Name -->
                     <h2 class="text-2xl">Hi, I'm</h2>
@@ -61,8 +69,8 @@
                     <!-- Resume -->
                     <a class="relative my-10 max-w-sm"
                     href="assets/AkshitU_SE.pdf" target="_blank" download="AkshitU_SE.pdf">
-                        <div class="rounded-lg absolute inset-0.5 max-w-md bg-gradient-to-b from-grad-start to-grad-end blur animate-tilt"></div>
-                        <div class="rounded-xl p-3 max-w-md bg-white dark:bg-gray-900 relative text-center hover:bg-white hover:scale-[97%]">
+                        <div class="rounded-lg absolute -inset-0.5 max-w-md bg-gradient-to-br from-grad-start to-grad-end blur animate-tilt"></div>
+                        <div class="rounded-xl p-3 max-w-md bg-white dark:bg-gray-900 relative text-center hover:bg-white z-20">
                             <span class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent text-2xl font-bold">
                                 Download Resume
                             </span>
@@ -71,37 +79,37 @@
                 </div>
 
                 <!-- Contact Info -->
-                <div class="flex md:mr-[8%] px-4 py-2 md:p-2 md:h-[25vw] md:w-[25vw] justify-center items-center relative ">
+                <div class="flex md:mr-[8%] mt-8 md:mt-0 px-4 py-2 md:p-2 md:h-[25vw] md:w-[25vw] justify-center items-center relative ">
 
                     <!-- Spinning circle background -->
-                    <div class="animate-rectangle w-full h-full absolute bg-gradient-to-r from-grad-start via-purple-500 to-indigo-800 rounded-full blur-sm">
+                    <div class="animate-rectangle w-[120%] h-[120%] absolute bg-gradient-to-r from-grad-start via-purple-500 to-indigo-800 rounded-full blur-sm">
                         <div class="bg-backg w-[98%] h-[98%] rounded-full "></div>
                     </div>
 
                     <div class="relative md:m-8">
                         <div class="grid grid-cols-2 gap-6">
                             <a href="https://www.github.com/akrypt" target="_blank"
-                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
+                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-100 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" stroke="white" fill="white" height="28" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                                 <p class="mt-1">GitHub</p>
                             </a>
                             <a href="https://www.linkedin.com/in/akshit-u" target="_blank"
-                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
+                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-100 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="white" fill="white" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                                 <p class="mt-1">LinkedIn</p>
                             </a>
                             <a href="https://www.kaggle.com/akrypt8" target="_blank"
-                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
+                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-100 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="white" fill="white" viewBox="0 0 32 32"><path d="M 10.351562 4 C 10.117563 4 10 4.1165625 10 4.3515625 L 10 27.644531 C 10 27.878531 10.116563 27.996094 10.351562 27.996094 L 12.648438 27.996094 C 12.882437 27.996094 13.001953 27.879531 13.001953 27.644531 L 13.001953 22.808594 L 14.810547 21.085938 L 20.048828 27.75 C 20.190828 27.915 20.354922 28 20.544922 28 L 23.716797 28 C 23.882797 28 23.977 27.952422 24 27.857422 L 23.933594 27.498047 L 17.023438 18.910156 L 23.650391 12.498047 C 23.773391 12.370047 23.730438 12 23.398438 12 L 20.117188 12 C 19.951187 12 19.785141 12.085953 19.619141 12.251953 L 13 18.974609 L 13 4.3515625 C 13 4.1165625 12.883437 4 12.648438 4 L 10.351562 4 z"></path></svg>
                                 <p class="mt-1">Kaggle</p>
                             </a>
                             <a href="https://medium.com/@akshitdayal99" target="_blank"
-                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-300 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
+                            class="flex flex-col p-6 px-14 shadow-sm md:h-[120px] shadow-borderg hover:border-transparent rounded-lg justify-center items-center duration-100 ease-in-out transform hover:shadow-pink-500 hover:shadow-lg hover:scale-[110%]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" stroke="white" fill="white" viewBox="0 0 50 50"><path d="M15 12A13 13 0 1015 38 13 13 0 1015 12zM35.5 13c-3.59 0-6.5 5.373-6.5 12 0 1.243.102 2.441.292 3.568.253 1.503.662 2.879 1.192 4.065.265.593.56 1.138.881 1.627.642.978 1.388 1.733 2.202 2.201C34.178 36.811 34.827 37 35.5 37s1.322-.189 1.933-.539c.814-.468 1.56-1.223 2.202-2.201.321-.489.616-1.034.881-1.627.53-1.185.939-2.562 1.192-4.065C41.898 27.441 42 26.243 42 25 42 18.373 39.09 13 35.5 13zM45.5 14c-.259 0-.509.173-.743.495-.157.214-.307.494-.448.833-.071.169-.14.353-.206.551-.133.395-.257.846-.37 1.343-.226.995-.409 2.181-.536 3.497-.063.658-.112 1.349-.146 2.065C43.017 23.499 43 24.241 43 25s.017 1.501.051 2.217c.033.716.082 1.407.146 2.065.127 1.316.31 2.501.536 3.497.113.498.237.948.37 1.343.066.198.135.382.206.551.142.339.292.619.448.833C44.991 35.827 45.241 36 45.5 36c1.381 0 2.5-4.925 2.5-11S46.881 14 45.5 14z"></path></svg>
                                 <p class="mt-1">Medium</p>
                             </a>
                         </div>
-                        <p class="text-lg mt-4 text-center ">akshitdayal99@gmail.com</p>
+                        <p class="text-lg mt-4 text-center tracking-[0.1rem]">akshitdayal99@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -198,7 +206,39 @@
 
             <!-- About me Section -->
             <div class="px-10 md:px-20 mt-[40px]">
-                <h1 class="text-2xl font-semibold">About Me:</h1>
+                <h1 class="text-2xl font-semibold ">About Me:</h1>
+                
+                <div class="flex justify-between items-center mt-10">
+                    <!-- Left Side -->
+                    <div>
+                        <img src="assets/wolf.webp" alt="Lone Wolf Picture" 
+                        class="rounded-full w-[20vw] h-[20vw] shadow-lg shadow-purple-500">
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="w-[70%] ">
+                        <p class="text-gray-700 dark:text-gray-300">I am a passionate technology enthusiast with a love for creating solutions that help in making this world a ✨ better place ✨. My expertise lies in creating web and mobile apps at startups, which makes me familiar with having to wear different hats and learning various tools quickly. I enjoy constantly improving my skills to stay ahead in the ever-evolving tech industry.</p>
+                        <div class="flex mt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg>
+                            <p class="ml-4 px-4 rounded-xl border-2 border-red-500">New Jersey Institute of Technology</p>
+                        </div>
+                        <div class="flex mt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" /></svg>
+                            <p class="ml-4 px-4 rounded-xl border-2 border-blue-500">Master of Science in Computer Science</p>
+                        </div>
+                        <div class="flex mt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" /></svg>
+                            <p class="ml-4 px-4 rounded-xl border-2 border-indigo-500">English, Japanese, Hindi, Telugu</p>
+                        </div>
+                        <div class="flex mt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 16 16">
+                                <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
+                                <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
+                            </svg>
+                            <p class="ml-4 px-4 rounded-xl border-2 border-purple-500">Dance, Toastmasters, Video Games, Psychology</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
