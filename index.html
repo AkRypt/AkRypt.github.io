@@ -70,7 +70,7 @@
 
 
     <!-- Main bg -->
-    <div class="relative mx-2 md:mx-10">
+    <div class="relative mx-2 md:mx-10 border">
         <!-- Gradient borders -->
         <div class="w-full absolute px-[2px] bg-gradient-to-b from-grad-start to-grad-end min-h-screen inset-0 blur animate-tilt"></div>
         <!-- Main Body -->
@@ -84,11 +84,10 @@
                     <!-- Name -->
                     <h2 class="text-2xl">Hi, I'm</h2>
                     <div class="relative">
-                        <p class="absolute translate-x-1 -translate-y-1 text-6xl blur-[2px] font-bold tracking-[0.2rem] bg-gradient-to-r from-pink-500 via-violet-500 to-cyan-500 text-transparent bg-clip-text">Akshit Dayal</p>
-                        <h1 class="text-xl md:text-6xl font-bold tracking-[0.2rem] animate-blink relative">Akshit Dayal</h1>
+                        <p class="absolute translate-x-0.5 md:translate-x-1 -translate-y-0.5 md:-translate-y-1 text-xl md:text-6xl blur-[2px] font-bold tracking-[0.2rem] bg-gradient-to-r from-pink-500 via-violet-500 to-cyan-500 text-transparent bg-clip-text">Akshit Dayal</p>                        <h1 class="text-xl md:text-6xl font-bold tracking-[0.2rem] animate-blink relative">Akshit Dayal</h1>
                     </div>
                     <div class="relative">
-                        <p class="absolute translate-x-1 -translate-y-1 text-6xl blur-sm font-bold tracking-[0.5rem] bg-gradient-to-r from-pink-500 via-violet-500 to-cyan-500 text-transparent bg-clip-text">Uttiramerur</p>
+                        <p class="absolute translate-x-0.5 md:translate-x-1 -translate-y-0.5 md:-translate-y-1 text-xl md:text-6xl blur-sm font-bold tracking-[0.5rem] bg-gradient-to-r from-pink-500 via-violet-500 to-cyan-500 text-transparent bg-clip-text">Uttiramerur</p>
                         <h1 class="text-xl md:text-6xl font-bold tracking-[0.5rem] relative">Uttiramerur</h1>
                     </div>
                     
@@ -112,13 +111,18 @@
                 </div>
 
                 <!-- Contact Info -->
-                <div class="flex md:mr-[8%] mt-8 md:mt-0 px-4 py-2 md:p-2 md:h-[25vw] md:w-[25vw] 
-                justify-center items-center relative ">
+                <div class="flex md:mr-[8%] mt-8 md:mt-0 
+                px-4 py-2 md:p-2 md:h-[25vw] md:w-[25vw] justify-center items-center relative">
 
                     <!-- Spinning circle background -->
-                    <div class="animate-rectangle w-[120%] h-[120%] absolute bg-gradient-to-r from-grad-start via-purple-500 to-grad-end rounded-full blur-sm">
-                        <div class="bg-backg w-[98%] h-[98%] rounded-full "></div>
+                    <div class="flex justify-center w-full h-full absolute">
+                        <div class="flex justify-center items-center w-full h-full relative">
+                            <div class="w-[110%] h-[110%] shadow-lg shadow-pink-500 bg-transparent rounded-full absolute animate-spin_right"></div>                
+                            <div class="w-[108%] h-[108%] shadow-lg shadow-violet-500 bg-transparent rounded-full absolute animate-spin_left"></div>
+                            <div class="w-[106%] h-[106%] shadow-lg shadow-cyan-500 bg-transparent rounded-full absolute animate-spin_right_fast"></div>
+                        </div>
                     </div>
+                    
 
                     <div class="relative md:m-8">
                         <div class="grid grid-cols-2 gap-6">
@@ -143,7 +147,7 @@
                                 <p class="mt-1">Medium</p>
                             </a>
                         </div>
-                        <p class="text-lg mt-4 text-center tracking-[0.1rem]">akshitdayal99@gmail.com</p>
+                        <p class="text-lg mt-4 text-center font-sans tracking-[0.1rem]">akshitdayal99@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -281,9 +285,9 @@
                     <div class="h-1 mt-1 w-full bg-gradient-to-r from-pink-500 via-violet-500 to-cyan-500"></div>
                 </div>
                 
-                <div class="flex flex-col md:flex-row justify-center space-x-10  mt-10">
+                <div class="flex flex-col md:flex-row justify-center md:space-x-10  mt-10">
                     <!-- Front End -->
-                    <div class="relative w-[30%] h-[100%]">
+                    <div class="relative w-full md:w-[30%] h-[100%]">
                         <div class="absolute inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500"></div>
                         <div class="relative bg-backg rounded-lg p-4">
                             <div class="flex items-center justify-center mx-4">
@@ -298,7 +302,7 @@
                     </div>
 
                     <!-- Back End -->
-                    <div class="relative w-[30%] h-[100%]">
+                    <div class="relative w-full md:w-[30%] h-[100%] mt-10 md:mt-0">
                         <div class="absolute inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500"></div>
                         <div class="relative bg-backg rounded-lg p-4">
                             <div class="flex items-center justify-center mx-4">
@@ -312,7 +316,7 @@
                     </div>
 
                     <!-- Databases -->
-                    <div class="relative w-[30%] h-[100%]">
+                    <div class="relative w-full md:w-[30%] h-[100%] mt-10 md:mt-0">
                         <div class="absolute inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500"></div>
                         <div class="relative bg-backg rounded-lg p-4">
                             <div class="flex items-center justify-center mx-4">
@@ -330,9 +334,9 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row justify-center space-x-10 mt-10">
+                <div class="flex flex-col md:flex-row justify-center md:space-x-10 mt-10">
                     <!-- Artificial Intelligence -->
-                    <div class="relative w-[30%] h-[100%]">
+                    <div class="relative w-full md:w-[30%] h-[100%]">
                         <div class="absolute inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500"></div>
                         <div class="relative bg-backg rounded-lg p-4">
                             <div class="flex items-center justify-center mx-4">
@@ -349,7 +353,7 @@
                     </div>
 
                     <!-- Languages -->
-                    <div class="relative w-[30%] h-[100%]">
+                    <div class="relative w-full md:w-[30%] h-[100%] mt-10 md:mt-0">
                         <div class="absolute inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500"></div>
                         <div class="relative bg-backg rounded-lg p-4">
                             <div class="flex items-center justify-center mx-4">
@@ -366,7 +370,7 @@
                     </div>
 
                     <!-- Computer Science -->
-                    <div class="relative w-[30%] h-[100%]">
+                    <div class="relative w-full md:w-[30%] h-[100%] mt-10 md:mt-0">
                         <div class="absolute inset-0 rounded-lg -translate-x-1 translate-y-1 bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500"></div>
                         <div class="relative bg-backg rounded-lg p-4">
                             <div class="flex items-center justify-center mx-4">
@@ -397,7 +401,6 @@
             </div>
 
             
-            <div class="ml-[200px] w-[100px] h-[100px] shadow-lg shadow-pink-500 bg-transparent rounded-full animate-rectangle"></div>
 
 
             <!-- Footer -->

@@ -19,7 +19,9 @@ module.exports = {
           blink: 'blink 1s infinite',
           marquee: 'marquee 15s linear infinite',
           marquee2: 'marquee2 15s linear infinite',
-          rectangle: 'rectangle 3s linear infinite'
+          spin_right: 'spin_right 3s linear infinite',
+          spin_right_fast: 'spin_right 2s linear infinite',
+          spin_left: 'spin_left 3s linear infinite'
         },
         keyframes: {
           tilt: {
@@ -39,10 +41,15 @@ module.exports = {
             '0%': { transform: 'translateX(100%)' },
             '100%': { transform: 'translateX(0%)' },
           },
-          rectangle: {
+          spin_right: {
             '0%': { transform: 'rotate(0deg)' },
             '50%': { transform: 'rotate(180deg)' },
             '100%': { transform: 'rotate(360deg)' },
+          },
+          spin_left: {
+            '0%': { transform: 'rotate(0deg)' },
+            '50%': { transform: 'rotate(-180deg)' },
+            '100%': { transform: 'rotate(-360deg)' },
           }
         },
       },
