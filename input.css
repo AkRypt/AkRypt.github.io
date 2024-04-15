@@ -7,13 +7,18 @@
         font-family: 'SpaceMono';
         src: url(assets/Space_Mono/SpaceMono-Regular.ttf);
     }
+
+    @font-face {
+        font-family: 'NeueMachina';
+        src: url(assets/fonts/PPNeueMachina-Regular.otf);
+    }
     
     html {
-        @apply font-spacemono text-white;
+        @apply font-machina text-white;
     }
-    .name-shadow {
-        text-shadow: 4px -1px 6px #5807F0;
-        /* #9300FF; */
-        /* #A909FF; */
+
+    .secondary_text {
+        @apply bg-gradient-to-br from-white to-secondary font-bold text-transparent bg-clip-text
     }
 }
+
