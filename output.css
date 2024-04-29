@@ -2371,8 +2371,8 @@ html {
   background-image: url('assets/bg-black.png');
 }
 
-.bg-\[url\(\'assets\/img\/bg_abstract\.png\'\)\] {
-  background-image: url('assets/img/bg_abstract.png');
+.bg-\[url\(\'assets\/img\/port_bg\.png\'\)\] {
+  background-image: url('assets/img/port_bg.png');
 }
 
 .bg-gradient-to-b {
@@ -2703,14 +2703,6 @@ html {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2719,11 +2711,6 @@ html {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-6xl {
@@ -2925,12 +2912,12 @@ html {
   -moz-osx-font-smoothing: auto;
 }
 
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .bg-blend-normal {
