@@ -1,0 +1,17 @@
+{
+    "en": {
+        "title": "Akshit Dayal | Portfolio",
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "tools": "Tools",
+        "hi_i_am": "Hi, I am",
+        "description": "A Full-Stack Developer who has worked with multiple startups and currently leveraging the power of AI to build beautiful things"
+    },
+    "ja": {
+        "title": "ダヤル・アクシット | ポートフォリオ",
+        "about-text": "私はウェブやモバイルアプリの開発に情熱を持つ技術愛好家です...",
+        "description": "フルスタックデヴェロッパー"
+    }
+}
+
