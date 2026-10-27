@@ -1,123 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AK Games — party games by AkRypt. Play Ishaare, Spycy, and more." />
-  <meta name="theme-color" content="#0a0f0c" />
-  <link rel="icon" href="./assets/favicon.ico" />
-  <link rel="stylesheet" href="./hub.css" />
-  <title>AK Games</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-30D34TJ1HB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-30D34TJ1HB');
-  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AkxH Games — play Ishaare, Spycy, and more.">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.ico">
+    <title>AkxH Games</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-30D34TJ1HB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-30D34TJ1HB');
+    </script>
 </head>
-<body>
-  <div class="atmosphere" aria-hidden="true">
-    <div class="orb orb-a"></div>
-    <div class="orb orb-b"></div>
-    <div class="grid-fade"></div>
-    <div class="noise"></div>
-  </div>
 
-  <header class="topbar">
-    <a class="mark" href="/" aria-label="AK Games home">
-      <span class="mark-bolt" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+<body class="w-full min-h-screen bg-[url('assets/bg-black.png')] bg-cover relative">
+
+    <!-- Background logo flashing -->
+    <div class="fixed w-full h-full flex justify-center opacity-100 items-center z-1 pointer-events-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#18181b" class="w-[90vw] md:w-[60vw] h-[100vh] animate-blink blur">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
         </svg>
-      </span>
-      <span class="mark-text">AK Games</span>
-    </a>
-    <a class="top-link" href="https://akshitdayal.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
-  </header>
+    </div>
 
-  <main>
-    <section class="hero">
-      <p class="brand">AK Games</p>
-      <h1 class="headline">Party games worth gathering for.</h1>
-      <p class="lede">Pick a room, pass a phone, and see who cracks first.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#games">Play now</a>
-        <a class="btn btn-ghost" href="https://github.com/AkRypt" target="_blank" rel="noopener noreferrer">AkRypt</a>
-      </div>
-    </section>
+    <!-- Main Body -->
+    <div class="relative flex flex-col p-4 md:p-10 min-h-screen z-5">
 
-    <section id="games" class="games" aria-label="Games">
-      <a class="game game-live" href="https://ishaaregame.vercel.app" target="_blank" rel="noopener noreferrer" style="--accent:#2c7c8d; --accent-soft:rgba(44,124,141,.22)">
-        <div class="game-icon" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none">
-            <rect x="10" y="8" width="44" height="48" rx="8" stroke="currentColor" stroke-width="2.5"/>
-            <path d="M22 22h20M22 32h14M22 42h18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="46" cy="14" r="7" fill="currentColor"/>
-            <path d="M43 14h6M46 11v6" stroke="#0a0f0c" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="game-copy">
-          <span class="game-status">Live</span>
-          <h2>Ishaare</h2>
-          <p>Heads-up charades for Indian friend groups. Act it out. Guess fast.</p>
-        </div>
-        <span class="game-arrow" aria-hidden="true">→</span>
-      </a>
+        <!-- Header -->
+        <h1 class="w-full text-white text-6xl md:text-8xl font-machina relative text-wrap">
+            <span class="absolute tracking-[0.4rem] italic font-semibold -translate-y-2 inset-0 blur-lg bg-gradient-to-r from-violet-500 via-cyan-500 to-indigo-500 text-transparent bg-clip-text">AkxH Games</span>
+            <span class="relative inline-block">
+                <span class="absolute text-6xl md:text-8xl tracking-[0.4rem] italic font-semibold translate-x-0 -translate-y-0 bg-gradient-to-r from-violet-500 via-cyan-500 to-indigo-500 text-transparent bg-clip-text blur-lg">AkxH Games</span>
+                <span class="absolute text-6xl md:text-8xl tracking-[0.4rem] font-semibold translate-x-0.5 -translate-y-0.5 md:translate-x-1.5 md:-translate-y-1 bg-gradient-to-r from-violet-500 via-cyan-500 to-indigo-500 text-transparent bg-clip-text">AkxH Games</span>
+                <span class="relative text-6xl md:text-8xl tracking-[0.4rem] font-bold">AkxH Games</span>
+            </span>
+        </h1>
+        <p class="mt-8 md:mt-10 text-2xl md:text-4xl bg-gradient-to-br from-white to-slate-500 font-bold text-transparent bg-clip-text">
+            Check out my games:
+        </p>
 
-      <a class="game game-live" href="https://spycy.vercel.app" target="_blank" rel="noopener noreferrer" style="--accent:#e8a54b; --accent-soft:rgba(232,165,75,.18)">
-        <div class="game-icon" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none">
-            <circle cx="32" cy="32" r="18" stroke="currentColor" stroke-width="2.5"/>
-            <circle cx="32" cy="32" r="7" fill="currentColor"/>
-            <path d="M32 8v6M32 50v6M8 32h6M50 32h6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M14 14l4.5 4.5M45.5 45.5 50 50M50 14l-4.5 4.5M14 50l4.5-4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="game-copy">
-          <span class="game-status">Live</span>
-          <h2>Spycy</h2>
-          <p>One spy. One word. Pass &amp; play or online lobby — don’t get caught.</p>
-        </div>
-        <span class="game-arrow" aria-hidden="true">→</span>
-      </a>
+        <!-- Projects List -->
+        <div id="projContainer" class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 pb-10"></div>
 
-      <div class="game game-soon" aria-disabled="true">
-        <div class="game-icon" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none">
-            <rect x="12" y="18" width="40" height="28" rx="6" stroke="currentColor" stroke-width="2.5"/>
-            <path d="M24 18v-4a8 8 0 0 1 16 0v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="32" cy="32" r="3.5" fill="currentColor"/>
-          </svg>
-        </div>
-        <div class="game-copy">
-          <span class="game-status soon">Soon</span>
-          <h2>Coming soon</h2>
-          <p>A new tabletop-style party game is in the works.</p>
-        </div>
-      </div>
-
-      <div class="game game-soon" aria-disabled="true">
-        <div class="game-icon" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none">
-            <path d="M18 44c6-14 22-14 28 0" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="24" cy="26" r="4" fill="currentColor"/>
-            <circle cx="40" cy="26" r="4" fill="currentColor"/>
-            <path d="M12 50h40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M32 12v8M28 16h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="game-copy">
-          <span class="game-status soon">Soon</span>
-          <h2>Coming soon</h2>
-          <p>Placeholder for the next AkRypt experiment. Stay tuned.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>Built by <a href="https://github.com/AkRypt" target="_blank" rel="noopener noreferrer">AkRypt</a> · <a href="./portfolio/">Old portfolio site</a></p>
-  </footer>
+    </div>
 </body>
+<script>
+    const projContainer = document.getElementById('projContainer');
+    const projects = [
+        {
+            title: "Ishaare!",
+            desc: "Heads Up game for Indians",
+            url: "https://ishaaregame.vercel.app/"
+        },
+        {
+            title: "Spycy",
+            desc: "One spy. One word. Don't get caught.",
+            url: "https://spycy.vercel.app/"
+        },
+        {
+            title: "Coming soon",
+            desc: "Another party game in the works",
+            url: null
+        },
+        {
+            title: "Coming soon",
+            desc: "Placeholder for the next experiment",
+            url: null
+        },
+        {
+            title: "Portfolio",
+            desc: "My personal portfolio",
+            url: "https://akshitdayal.vercel.app/"
+        },
+    ];
+
+    projects.forEach(project => {
+        const projectElement = document.createElement('div');
+        const isLink = Boolean(project.url);
+        const titleBlock = isLink
+            ? `<a class="max-w-max group -skew-x-12" href="${project.url}" target="_blank" rel="noopener noreferrer">
+                    <p class="absolute text-3xl md:text-6xl bg-gradient-to-r from-violet-500 via-cyan-500 to-fuchsia-500 bg-clip-text text-transparent blur-md">
+                        ${project.title}
+                    </p>
+                    <p class="text-white text-3xl md:text-6xl font-bold bg-gradient-to-r from-violet-500 via-cyan-500 to-fuchsia-500 bg-clip-text relative group-hover:animate-bg_spin group-hover:text-transparent">
+                        ${project.title}
+                    </p>
+                </a>`
+            : `<div class="max-w-max -skew-x-12 opacity-50">
+                    <p class="text-white/70 text-3xl md:text-6xl font-bold relative">
+                        ${project.title}
+                    </p>
+                </div>`;
+
+        projectElement.innerHTML = `
+        <div class="flex max-w-max justify-start items-start relative mt-4 md:mt-6">
+            <div class="mr-2 md:mr-8 mt-5 md:mt-8 relative w-4 md:w-8 h-4 md:h-5 shrink-0">
+                <div class="w-4 h-[2px] md:w-8 md:h-[5px] bg-gradient-to-r from-violet-500 via-cyan-500 to-fuchsia-500 rounded-full rotate-45 absolute"></div>
+                <div class="w-4 h-[2px] md:w-8 md:h-[5px] bg-gradient-to-r from-cyan-500 to-fuchsia-500 rounded-full -rotate-45 absolute"></div>
+            </div>
+
+            <div class="flex flex-col ml-6 min-w-0">
+                ${titleBlock}
+                <p class="text-sm md:text-lg font-semibold text-white/80">${project.desc}</p>
+            </div>
+        </div>
+        `;
+        projContainer.appendChild(projectElement);
+    });
+</script>
 </html>
