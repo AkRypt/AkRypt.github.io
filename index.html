@@ -9,6 +9,258 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="icon" href="./assets/favicon.ico">
     <title>AkxH Games</title>
+    <style>
+        :root {
+            --ink: #050508;
+            --panel: rgba(18, 18, 28, 0.72);
+            --panel-border: rgba(167, 139, 250, 0.18);
+            --panel-border-hover: rgba(34, 211, 238, 0.45);
+            --muted: rgba(226, 232, 240, 0.62);
+            --text: #f8fafc;
+        }
+
+        body.hub {
+            margin: 0;
+            min-height: 100vh;
+            color: var(--text);
+            font-family: NeueMachina, ui-sans-serif, system-ui, sans-serif;
+            background-color: var(--ink);
+            background-image:
+                radial-gradient(90% 60% at 8% -10%, rgba(139, 92, 246, 0.22), transparent 55%),
+                radial-gradient(70% 50% at 100% 10%, rgba(34, 211, 238, 0.14), transparent 50%),
+                url("assets/bg-black.png");
+            background-size: auto, auto, cover;
+            background-attachment: fixed;
+        }
+
+        .hub-bolt {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.55;
+        }
+
+        .hub-bolt svg {
+            width: min(90vw, 720px);
+            height: 100vh;
+            stroke: #18181b;
+            filter: blur(2px);
+        }
+
+        .hub-wrap {
+            position: relative;
+            z-index: 1;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: clamp(1.5rem, 4vw, 3rem) clamp(1.1rem, 3vw, 2rem) 3rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand {
+            position: relative;
+            margin: 0;
+            font-size: clamp(2.75rem, 10vw, 5.5rem);
+            line-height: 0.95;
+            letter-spacing: 0.04em;
+            font-weight: 800;
+        }
+
+        .brand-glow,
+        .brand-shift,
+        .brand-core {
+            display: block;
+        }
+
+        .brand-glow {
+            position: absolute;
+            inset: 0;
+            color: transparent;
+            background: linear-gradient(90deg, #8b5cf6, #22d3ee, #6366f1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            filter: blur(14px);
+            opacity: 0.85;
+            font-style: italic;
+            pointer-events: none;
+        }
+
+        .brand-shift {
+            position: absolute;
+            inset: 0;
+            transform: translate(3px, -2px);
+            color: transparent;
+            background: linear-gradient(90deg, #8b5cf6, #22d3ee, #6366f1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            pointer-events: none;
+        }
+
+        .brand-core {
+            position: relative;
+            color: #fff;
+        }
+
+        .lede {
+            margin: 1.15rem 0 0;
+            max-width: 28ch;
+            font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+            line-height: 1.45;
+            font-weight: 700;
+            color: transparent;
+            background: linear-gradient(180deg, #fff 20%, #64748b 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .games {
+            margin-top: clamp(2rem, 5vw, 3rem);
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 720px) {
+            .games {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.25rem;
+            }
+        }
+
+        .game-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+            padding: 1.25rem;
+            border-radius: 1.35rem;
+            background: var(--panel);
+            border: 1px solid var(--panel-border);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        @media (min-width: 720px) {
+            .game-card {
+                padding: 1.45rem;
+                gap: 1.25rem;
+            }
+        }
+
+        .game-card:hover,
+        .game-card:focus-visible {
+            transform: translateY(-3px);
+            border-color: var(--panel-border-hover);
+            background: rgba(24, 24, 38, 0.88);
+            box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.08), 0 18px 40px rgba(0, 0, 0, 0.35);
+            outline: none;
+        }
+
+        .game-art {
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 1.25rem;
+            object-fit: cover;
+            display: block;
+            background: #0a0a12;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+        }
+
+        @media (min-width: 720px) {
+            .game-art {
+                width: 6.5rem;
+                height: 6.5rem;
+                border-radius: 1.4rem;
+            }
+        }
+
+        .game-name {
+            margin: 0;
+            font-size: clamp(1.55rem, 3.5vw, 2rem);
+            letter-spacing: 0.02em;
+            font-weight: 800;
+            color: #fff;
+            transition: color 0.2s ease;
+        }
+
+        .game-card:hover .game-name {
+            color: transparent;
+            background: linear-gradient(90deg, #a78bfa, #22d3ee, #e879f9);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .game-desc {
+            margin: 0.4rem 0 0;
+            font-size: 0.98rem;
+            line-height: 1.45;
+            color: var(--muted);
+            font-weight: 600;
+        }
+
+        .game-cta {
+            margin-top: auto;
+            padding-top: 0.35rem;
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #22d3ee;
+            opacity: 0.85;
+        }
+
+        .game-card:hover .game-cta {
+            opacity: 1;
+        }
+
+        .soon {
+            margin-top: 1.75rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(148, 163, 184, 0.16);
+            color: rgba(148, 163, 184, 0.78);
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .soon strong {
+            color: rgba(226, 232, 240, 0.72);
+            font-weight: 700;
+        }
+
+        .foot {
+            margin-top: auto;
+            padding-top: 2.5rem;
+            font-size: 0.85rem;
+            color: rgba(148, 163, 184, 0.7);
+            font-weight: 600;
+        }
+
+        .foot a {
+            color: #e2e8f0;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(34, 211, 238, 0.35);
+        }
+
+        .foot a:hover {
+            color: #22d3ee;
+            border-color: #22d3ee;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .game-card,
+            .game-card:hover {
+                transition: none;
+                transform: none;
+            }
+        }
+    </style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-30D34TJ1HB"></script>
     <script>
@@ -19,98 +271,46 @@
     </script>
 </head>
 
-<body class="w-full min-h-screen bg-[url('assets/bg-black.png')] bg-cover relative">
-
-    <!-- Background logo flashing -->
-    <div class="fixed w-full h-full flex justify-center opacity-100 items-center z-1 pointer-events-none">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#18181b" class="w-[90vw] md:w-[60vw] h-[100vh] animate-blink blur">
+<body class="hub">
+    <div class="hub-bolt" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="animate-blink">
             <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
         </svg>
     </div>
 
-    <!-- Main Body -->
-    <div class="relative flex flex-col p-4 md:p-10 min-h-screen z-5">
-
-        <!-- Header -->
-        <h1 class="w-full text-white text-6xl md:text-8xl font-machina relative text-wrap">
-            <span class="absolute tracking-[0.4rem] italic font-semibold -translate-y-2 inset-0 blur-lg bg-gradient-to-r from-violet-500 via-cyan-500 to-indigo-500 text-transparent bg-clip-text">AkxH Games</span>
-            <span class="relative inline-block">
-                <span class="absolute text-6xl md:text-8xl tracking-[0.4rem] italic font-semibold translate-x-0 -translate-y-0 bg-gradient-to-r from-violet-500 via-cyan-500 to-indigo-500 text-transparent bg-clip-text blur-lg">AkxH Games</span>
-                <span class="absolute text-6xl md:text-8xl tracking-[0.4rem] font-semibold translate-x-0.5 -translate-y-0.5 md:translate-x-1.5 md:-translate-y-1 bg-gradient-to-r from-violet-500 via-cyan-500 to-indigo-500 text-transparent bg-clip-text">AkxH Games</span>
-                <span class="relative text-6xl md:text-8xl tracking-[0.4rem] font-bold">AkxH Games</span>
-            </span>
+    <main class="hub-wrap">
+        <h1 class="brand">
+            <span class="brand-glow">AkxH Games</span>
+            <span class="brand-shift">AkxH Games</span>
+            <span class="brand-core">AkxH Games</span>
         </h1>
-        <p class="mt-8 md:mt-10 text-2xl md:text-4xl bg-gradient-to-br from-white to-slate-500 font-bold text-transparent bg-clip-text">
-            Check out my games:
+        <p class="lede">Party games for the group chat that never sleeps.</p>
+
+        <section class="games" aria-label="Games">
+            <a class="game-card" href="https://ishaaregame.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <img class="game-art" src="./assets/icons/ishaare.png" alt="" width="104" height="104" />
+                <div>
+                    <h2 class="game-name">Ishaare</h2>
+                    <p class="game-desc">Heads-up charades for Indian friend groups.</p>
+                </div>
+                <span class="game-cta">Play →</span>
+            </a>
+
+            <a class="game-card" href="https://spycy.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <img class="game-art" src="./assets/icons/spycy.png" alt="" width="104" height="104" />
+                <div>
+                    <h2 class="game-name">Spycy</h2>
+                    <p class="game-desc">One spy. One word. Don’t get caught.</p>
+                </div>
+                <span class="game-cta">Play →</span>
+            </a>
+        </section>
+
+        <p class="soon"><strong>More games</strong> are on the way.</p>
+
+        <p class="foot">
+            <a href="https://akshitdayal.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
         </p>
-
-        <!-- Projects List -->
-        <div id="projContainer" class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 pb-10"></div>
-
-    </div>
+    </main>
 </body>
-<script>
-    const projContainer = document.getElementById('projContainer');
-    const projects = [
-        {
-            title: "Ishaare!",
-            desc: "Heads Up game for Indians",
-            url: "https://ishaaregame.vercel.app/"
-        },
-        {
-            title: "Spycy",
-            desc: "One spy. One word. Don't get caught.",
-            url: "https://spycy.vercel.app/"
-        },
-        {
-            title: "Coming soon",
-            desc: "Another party game in the works",
-            url: null
-        },
-        {
-            title: "Coming soon",
-            desc: "Placeholder for the next experiment",
-            url: null
-        },
-        {
-            title: "Portfolio",
-            desc: "My personal portfolio",
-            url: "https://akshitdayal.vercel.app/"
-        },
-    ];
-
-    projects.forEach(project => {
-        const projectElement = document.createElement('div');
-        const isLink = Boolean(project.url);
-        const titleBlock = isLink
-            ? `<a class="max-w-max group -skew-x-12" href="${project.url}" target="_blank" rel="noopener noreferrer">
-                    <p class="absolute text-3xl md:text-6xl bg-gradient-to-r from-violet-500 via-cyan-500 to-fuchsia-500 bg-clip-text text-transparent blur-md">
-                        ${project.title}
-                    </p>
-                    <p class="text-white text-3xl md:text-6xl font-bold bg-gradient-to-r from-violet-500 via-cyan-500 to-fuchsia-500 bg-clip-text relative group-hover:animate-bg_spin group-hover:text-transparent">
-                        ${project.title}
-                    </p>
-                </a>`
-            : `<div class="max-w-max -skew-x-12 opacity-50">
-                    <p class="text-white/70 text-3xl md:text-6xl font-bold relative">
-                        ${project.title}
-                    </p>
-                </div>`;
-
-        projectElement.innerHTML = `
-        <div class="flex max-w-max justify-start items-start relative mt-4 md:mt-6">
-            <div class="mr-2 md:mr-8 mt-5 md:mt-8 relative w-4 md:w-8 h-4 md:h-5 shrink-0">
-                <div class="w-4 h-[2px] md:w-8 md:h-[5px] bg-gradient-to-r from-violet-500 via-cyan-500 to-fuchsia-500 rounded-full rotate-45 absolute"></div>
-                <div class="w-4 h-[2px] md:w-8 md:h-[5px] bg-gradient-to-r from-cyan-500 to-fuchsia-500 rounded-full -rotate-45 absolute"></div>
-            </div>
-
-            <div class="flex flex-col ml-6 min-w-0">
-                ${titleBlock}
-                <p class="text-sm md:text-lg font-semibold text-white/80">${project.desc}</p>
-            </div>
-        </div>
-        `;
-        projContainer.appendChild(projectElement);
-    });
-</script>
 </html>
