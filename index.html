@@ -240,23 +240,28 @@
             font-weight: 700;
         }
 
-        .foot {
-            margin-top: auto;
-            padding-top: 2.5rem;
-            font-size: 0.85rem;
-            color: rgba(148, 163, 184, 0.7);
-            font-weight: 600;
+        .hub-nav {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 0 0.85rem;
         }
 
-        .foot a {
-            color: #e2e8f0;
+        .portfolio-link {
+            font-size: 0.98rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
             text-decoration: none;
-            border-bottom: 1px solid rgba(34, 211, 238, 0.35);
+            color: rgba(226, 232, 240, 0.82);
+            border-bottom: 1px solid rgba(34, 211, 238, 0.45);
+            padding-bottom: 0.12rem;
+            transition: color 0.2s ease, border-color 0.2s ease;
         }
 
-        .foot a:hover {
+        .portfolio-link:hover,
+        .portfolio-link:focus-visible {
             color: #22d3ee;
             border-color: #22d3ee;
+            outline: none;
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -285,6 +290,9 @@
     </div>
 
     <main class="hub-wrap">
+        <nav class="hub-nav" aria-label="Site">
+            <a class="portfolio-link" href="https://akshitdayal.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        </nav>
         <h1 class="brand">
             <span class="brand-glow">AkxH Games</span>
             <span class="brand-shift">AkxH Games</span>
@@ -331,10 +339,6 @@
         </section>
 
         <p class="soon"><strong>More games</strong> are on the way.</p>
-
-        <p class="foot">
-            <a href="https://akshitdayal.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
-        </p>
     </main>
 </body>
 </html>
