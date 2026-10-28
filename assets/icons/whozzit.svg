@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Who zzit?">
+  <defs>
+    <linearGradient id="wz-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#e879f9"/>
+    </linearGradient>
+    <linearGradient id="wz-mark" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#e9d5ff"/>
+      <stop offset="45%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <radialGradient id="wz-glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="rgba(139,92,246,0.35)"/>
+      <stop offset="100%" stop-color="rgba(11,11,20,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0b0b14"/>
+  <rect width="128" height="128" rx="28" fill="url(#wz-glow)"/>
+  <rect x="5" y="5" width="118" height="118" rx="24" fill="none" stroke="url(#wz-ring)" stroke-width="2.5" opacity="0.95"/>
+  <!-- stylized ? -->
+  <path d="M46 48c0-11 9-20 22-20s22 8.5 22 20c0 9-5 14-13 19-5 3.2-8 6.5-8 13"
+        fill="none" stroke="url(#wz-mark)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="69" cy="96" r="6.5" fill="url(#wz-mark)"/>
+</svg>
